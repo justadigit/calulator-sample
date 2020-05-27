@@ -1,0 +1,87 @@
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    background-color: rgb(172, 168, 168);
+    font-family: Arial;
+}
+.calculator{
+    width:35%;
+    padding:5px;
+    background-color: #ffffff;
+    margin:5% auto;
+    border-radius:5px;
+}
+.calculator form{
+    width:90%;
+    margin:0 auto;
+    padding:3%;
+}
+.calculator form label{
+    font-size: small;
+    color:gray;
+    width:100%;
+    display: block;
+    margin-top:10px;
+    margin-bottom: 3px;
+}
+.calculator form input[type=number]{
+    width:100%;
+    display: block;
+    height:40px;
+    padding: 12px 10px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    border:none;
+}
+.calculator form input[type=number]:not(#result){
+    
+    border-bottom:rgb(37, 103, 226) 3px dotted;
+}
+input[type=number]:focus {
+    outline: none;;
+    border: 3px solid rgb(185, 180, 180);
+  }
+::-webkit-input-placeholder{
+    color:darkslategray;
+    margin-left:3px;
+}
+.btngrid{
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:0 auto;
+}
+.btngrid > *{
+    margin:20% 6%;
+    padding:20%;
+    font-size:larger ;
+    border-radius:5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btngrid > *:hover{
+    color:gray;
+    box-shadow:inset 0em 0em 1em gray;
+    transition: 0.3s;
+    
+}
+.clear{
+    clear:both;
+}
+
+@media  screen and (max-width:800px){
+    .calculator{
+        width:80%;
+        padding:5px;
+        background-color: rgb(209, 209, 201);
+        margin:5% auto;
+        border-radius:5px;
+    }
+    .calculator form{
+        width:90%;
+        margin:0 auto;
+        padding:3%;
+    }
+}

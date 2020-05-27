@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <form action="">
+            <label for="firstNum">First Number</label>
+            <input type="number" name="first" id="firstNum" placeholder="Enter a number" required>
+            <label for="secondtNum">Second Number</label>
+            <input type="number" name="second" id="secondNum" placeholder="Enter a number" required>
+            <label for="result">Result</label>
+            <input type="number" name="result" id="result" disabled>
+            <div class="btngrid">
+                <input type="submit" id="sum" value="+" >
+                <input type="submit" id="minus" value="-" >
+                <input type="submit" id="multi" value="*" >
+                <input type="submit" id="div" value="/" >
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
